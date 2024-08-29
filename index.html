@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, .2);
+            padding: 20px;
+            background-color: red;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Meu Contador</h1>
+        <p>0</p>
+        <button onclick="subtrai()">Menos</button>
+        <button onclick="soma()">Mais</button>
+    </section>
+    <script>
+        // Estado da minha aplicação
+        let n1 = 0;
+
+        function subtrai(){
+            n1--
+            render()
+        }
+
+        function soma(){
+            n1++
+            render()
+        }
+
+        // Jogar o estado da aplicação na tela
+        function render(){
+            const numeroNaTela = document.querySelector('p')
+            numeroNaTela.innerText = n1
+        }
+    </script>
+</body>
