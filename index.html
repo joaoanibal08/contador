@@ -32,7 +32,7 @@
 <body>
     <section>
         <h1>Meu Contador</h1>
-        <p>0</p>
+        <p id="resultado">0</p>
         <button onclick="subtrai()">Menos</button>
         <button onclick="soma()">Mais</button>
     </section>
@@ -52,7 +52,7 @@
 
         // Jogar o estado da aplicação na tela
         function render(){
-            const numeroNaTela = document.querySelector('p')
+            const numeroNaTela = document.getElementById('resultado')
             numeroNaTela.innerText = n1
         }
     </script>
