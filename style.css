@@ -31,15 +31,15 @@ p {
     padding: 15px;
     font-family: "Jost", sans-serif;
     font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
     
 }
 
 .btn:hover {
     cursor: pointer;
-    transition: .2s;
-    padding: 18px;
-    b
-     /*transition: .5s; */
+    transition: .3s;
+    padding: 20px;
 }
 
 #btnSubtrai:hover {
