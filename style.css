@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -9,17 +10,48 @@ body {
     min-height: 100vh;
     display: grid;
     place-items: center;
+    background-color: rgba(36, 22, 22, 0.959);
 }
 
 section {
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(161, 144, 144, 0.699);
     padding: 50px;
     /* background-color: blue; */
     text-align: center;
     border-radius: 5px;
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
 }
 
 p {
-    font-size: 120px;
+    font-size: 120px; 
+}
+
+.btn {
+    padding: 15px;
+    font-family: "Jost", sans-serif;
+    font-size: 1.1em;
     
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: .2s;
+    padding: 18px;
+    b
+     /*transition: .5s; */
+}
+
+#btnSubtrai:hover {
+    background-color: rgb(130, 157, 231);
+    
+}
+
+#btnSoma:hover {
+    background-color: rgb(250, 182, 57);
+}
+
+#btnReset:hover {
+    background-color: black;
+    color: white;
 }
